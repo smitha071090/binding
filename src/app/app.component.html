@@ -1,0 +1,18 @@
+<h2>{{title}}</h2>
+<input type="text" value={{defval}} disabled="{{txtdis}}">
+<input type="text" [value]=defval [disabled]="txtdis">
+<h3 [style.color]="col">style color using proprty binding</h3>
+<h4 style.color={{col}}>style color using interpolation</h4>
+
+
+<input type="text" (keydown)="dataenter($event)">
+
+<input type="text" value="{{inputval}}">
+<div [style.background-color]="col"></div>
+<button (click)="changecolor()">red</button>
+
+
+
+<input [(ngModel)]="uname">
+<div>{{uname}}</div>
+
